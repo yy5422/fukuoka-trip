@@ -23,21 +23,51 @@ main{padding-bottom:60px}.section{padding:37px 0 0}.section-top{display:flex;jus
 .footer{margin-top:45px;padding:22px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;font-size:9px;color:var(--muted);letter-spacing:.08em}
 @media(min-width:700px){.hero{padding-top:38px}.hero-box{padding:38px 40px 32px}.quick{grid-template-columns:repeat(4,1fr)}.section{padding-top:48px}.timeline{padding:7px 27px 16px}.event{grid-template-columns:68px 20px 1fr;gap:12px}.event:not(:last-child):after{left:77px}.food-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:390px){.shell{padding:0 14px}.hero-box{padding:24px 19px}.quick-card{padding:12px}.event{grid-template-columns:47px 15px 1fr;gap:7px}.event:not(:last-child):after{left:53px}.timeline{padding-left:13px;padding-right:13px}.food-grid{grid-template-columns:1fr 1fr}}
+
+/* Trip overview: clean information card */
+.hero{padding:18px 0 24px}
+.trip-info{background:#fff;border:1px solid #e3e3e3;border-radius:27px;padding:25px 23px 23px;color:#171717;box-shadow:0 2px 10px #00000005}
+.info-title{font-size:clamp(25px,6vw,36px);font-weight:800;letter-spacing:-.055em}
+.info-date{font-size:clamp(34px,8vw,48px);font-weight:800;letter-spacing:-.06em;margin-top:26px;line-height:1.05;color:#111}
+.info-sub{font-size:clamp(14px,3.7vw,20px);font-weight:700;margin-top:15px;color:#222}
+.info-divider{height:1px;background:#e8e8e8;margin:25px 0}
+.flight-grid{display:grid;grid-template-columns:1fr 30px 1fr;align-items:center;gap:9px}
+.info-label{font-size:13px;color:#666;margin-bottom:10px}
+.flight-route{font-size:clamp(15px,4vw,21px);font-weight:800;white-space:nowrap;letter-spacing:-.04em}
+.flight-time{font-size:clamp(16px,4.2vw,23px);margin-top:5px;white-space:nowrap;letter-spacing:-.04em}
+.flight-meta{font-size:12px;color:#666;margin-top:8px}
+.flight-plane{text-align:center;font-size:24px;color:#666}
+.hotel-info{color:#171717}
+.hotel-name{font-size:clamp(17px,4.3vw,23px);font-weight:800;margin-top:12px;letter-spacing:-.04em}
+.hotel-address{font-size:13px;color:#666;margin-top:10px}
+.hotel-map{display:inline-block;margin-top:13px;padding:8px 12px;border:1px solid #ddd;border-radius:30px;font-size:11px;font-weight:700;color:#222}
+.hotel{background:#fff;color:#171717;border:1px solid var(--line)}
+.hotel .section-kicker{color:var(--orange)}
+.hotel p{color:#666}
+.hotel .link{background:var(--green);color:#fff}
+@media(max-width:390px){.trip-info{padding:22px 17px}.flight-grid{grid-template-columns:1fr 20px 1fr;gap:5px}.flight-route{font-size:14px}.flight-time{font-size:16px}.flight-meta{font-size:10px}.info-label{font-size:11px}}
 </style>
 </head>
 <body>
 <header class="shell hero">
- <div class="topline"><div class="brand"><span class="brandmark">福</span><span>TRAVEL NOTES</span></div><span class="edition mono">ISSUE 001 · JAPAN</span></div>
- <div class="hero-box">
-  <div class="eyebrow mono">2 NIGHTS / 3 DAYS · TWO TRAVELERS</div>
-  <h1>FUKUOKA<span>.</span><br>LET'S GO.</h1>
-  <p class="hero-sub">먹고, 걷고, 구경하는 우리들의 후쿠오카</p>
-  <div class="hero-bottom"><div><div class="date-big mono">NOV 18 — 20, 2026</div><div class="date-small">WEDNESDAY — FRIDAY · TENJIN BASE</div></div><div class="stamp mono">福岡<br>TRIP<br>2026</div></div>
- </div>
- <div class="quick">
-  <div class="quick-card"><div class="quick-label mono">OUTBOUND · 11.18</div><div class="quick-main">인천 06:30 → 후쿠오카 07:55</div><div class="quick-sub">제주항공 7C1401</div></div>
-  <div class="quick-card"><div class="quick-label mono">RETURN · 11.20</div><div class="quick-main">후쿠오카 17:00 → 인천 18:35</div><div class="quick-sub">에어서울 RS458</div></div>
- </div>
+ <section class="trip-info">
+  <div class="info-title">FUKUOKA TRIP</div>
+  <div class="info-date">11.18 – 11.20</div>
+  <div class="info-sub">2박 3일 · 2명 · 수요일–금요일</div>
+  <div class="info-divider"></div>
+  <div class="flight-grid">
+   <div class="flight"><div class="info-label">출국 11/18</div><div class="flight-route">인천 → 후쿠오카</div><div class="flight-time">06:30 → 07:55</div><div class="flight-meta">제주항공 7C1401</div></div>
+   <div class="flight-plane">✈</div>
+   <div class="flight"><div class="info-label">귀국 11/20</div><div class="flight-route">후쿠오카 → 인천</div><div class="flight-time">17:00 → 18:35</div><div class="flight-meta">에어서울 RS458</div></div>
+  </div>
+  <div class="info-divider"></div>
+  <div class="hotel-info">
+   <div class="info-label">숙소</div>
+   <div class="hotel-name">▦ &nbsp;니시테츠 인 후쿠오카</div>
+   <div class="hotel-address">Nishitetsu Inn Fukuoka · 텐진 1-16-1</div>
+   <a class="hotel-map" href="https://maps.app.goo.gl/R9TFhKotyeCe1mdf9?g_st=ic" target="_blank" rel="noopener">숙소 위치 보기 ↗</a>
+  </div>
+ </section>
 </header>
 <div class="navwrap"><nav class="nav"><a href="#day1">DAY 01</a><a href="#day2">DAY 02</a><a href="#day3">DAY 03</a><a href="#food">RESTAURANTS</a><a href="#info">INFO</a><a href="#check">CHECKLIST</a></nav></div>
 <main class="shell">
