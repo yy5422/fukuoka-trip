@@ -1,146 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#17251f">
-<title>FUKUOKA TRIP — 18–20 NOV 2026</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f2eb">
+<title>FUKUOKA / 2026.11.18—20</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1d2823;--muted:#6c7771;--paper:#f6f5ef;--card:#fffefa;--green:#244b3b;--lime:#d9ed9a;--line:#e4e5dc;--orange:#d77d50}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;line-height:1.55}
-a{color:inherit}.wrap{max-width:1040px;margin:auto;padding:0 22px}
-header{background:var(--green);color:#fff;padding:24px 0 54px;position:relative;overflow:hidden}
-header:after{content:"F";position:absolute;right:3%;top:-100px;font-family:Georgia,serif;font-size:390px;line-height:1;color:#ffffff0b;pointer-events:none}
-.top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;letter-spacing:.14em;color:#dbe7dc}
-.logo{font-weight:800}.hero{position:relative;z-index:1;padding-top:58px}.eyebrow{font-size:11px;letter-spacing:.22em;color:var(--lime);font-weight:700}
-h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(46px,9vw,86px);line-height:.94;letter-spacing:-.055em;margin:16px 0 18px;font-weight:500}
-.hero p{margin:0;color:#e3e9e2;font-size:15px}.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
-.pill{border:1px solid #ffffff55;border-radius:30px;padding:7px 12px;font-size:12px;color:#fff}
-nav{position:sticky;top:0;z-index:10;background:#f6f5efed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.navinner{display:flex;gap:22px;overflow:auto;padding:13px 22px;max-width:1040px;margin:auto;white-space:nowrap}
-nav a{text-decoration:none;font-size:12px;color:var(--muted);font-weight:700}nav a:hover{color:var(--green)}
-section{padding:42px 0;scroll-margin-top:54px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:20px}
-.kicker{font-size:10px;letter-spacing:.18em;color:#849087;font-weight:800}h2{font-size:25px;letter-spacing:-.04em;margin:4px 0 0}h3{font-size:17px;margin:0 0 8px;letter-spacing:-.03em}
-.small{font-size:12px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:19px;box-shadow:0 5px 20px #24352b08}
-.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.info{padding:15px;border-radius:14px;background:#ffffff14;border:1px solid #ffffff24}.info b{display:block;font-size:12px;color:var(--lime);margin-bottom:5px}.info span{font-size:13px;color:#fff}
-.day{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;margin-bottom:18px}
-.dayhead{background:#edf0e6;padding:18px 21px;display:flex;justify-content:space-between;align-items:center;gap:12px}.daynum{font-family:Georgia,serif;font-size:34px;color:var(--green);line-height:1}.daydate{font-size:12px;color:var(--muted);font-weight:700}
-.daybody{padding:8px 21px 20px}.stop{display:grid;grid-template-columns:76px 1fr;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}.stop:last-child{border-bottom:0}.time{font-size:12px;color:var(--green);font-weight:800;padding-top:3px}.stop p{margin:3px 0 0;font-size:13px;color:var(--muted)}
-.tag{display:inline-block;font-size:10px;font-weight:800;padding:3px 8px;border-radius:20px;background:#edf3e3;color:#3e6148;margin-left:5px}.tag.orange{background:#f8e9df;color:#9a5635}
-.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:30px;padding:8px 12px;background:var(--green);color:#fff;font-size:11px;font-weight:700}.btn.ghost{background:#edf0e6;color:var(--green)}
-.restaurant{display:flex;flex-direction:column;gap:7px}.restaurant .kind{font-size:10px;letter-spacing:.12em;color:#87928b;font-weight:800}.restaurant p{margin:0;color:var(--muted);font-size:13px}
-.note{border-left:3px solid var(--orange);padding:12px 15px;background:#fff8f1;border-radius:0 12px 12px 0;font-size:13px;color:#6f594c}
-.list{display:grid;gap:10px}.listrow{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.listrow:last-child{border:0}
-.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.check{display:flex;gap:9px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card);font-size:13px}.check input{accent-color:var(--green);width:16px;height:16px}
-footer{background:var(--green);color:#dce7dc;padding:30px 0;font-size:12px}.footline{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-@media(max-width:680px){.wrap{padding:0 16px}.hero{padding-top:48px}.info-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.stop{grid-template-columns:62px 1fr;gap:10px}.daybody{padding:5px 16px 15px}.dayhead{padding:16px}.checks{grid-template-columns:1fr}section{padding:32px 0}}
+:root{--bg:#f5f2eb;--paper:#fffefa;--ink:#20231f;--muted:#77786f;--line:#e8e3d9;--orange:#ed6845;--green:#244d3d;--pale:#e8eee5;--yellow:#f2d66d}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans","Noto Sans KR",sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.mono{font-family:"DM Mono",monospace;letter-spacing:.04em}.shell{max-width:760px;margin:auto;padding:0 20px}
+.hero{padding:28px 0 34px}.topline{display:flex;justify-content:space-between;align-items:center;font-size:10px;font-weight:700;letter-spacing:.15em}.brand{display:flex;align-items:center;gap:8px}.brandmark{width:23px;height:23px;background:var(--orange);border-radius:50%;display:grid;place-items:center;color:white;font-size:13px}.edition{color:var(--muted)}
+.hero-box{margin-top:32px;background:var(--green);color:white;border-radius:5px 5px 34px 5px;padding:28px 25px 25px;position:relative;overflow:hidden}.hero-box:after{content:"福";position:absolute;right:-8px;bottom:-65px;font-family:serif;font-size:220px;color:#ffffff0c}.eyebrow{font-size:10px;color:#d5e1d4;letter-spacing:.16em;font-weight:700}.hero h1{font-size:clamp(48px,12vw,82px);line-height:.88;letter-spacing:-.075em;margin:19px 0 18px;font-weight:800;position:relative;z-index:1}.hero h1 span{color:var(--yellow)}.hero-sub{font-size:13px;color:#e4e9e1;margin:0;position:relative;z-index:1}.hero-bottom{display:flex;justify-content:space-between;gap:12px;align-items:end;margin-top:34px;position:relative;z-index:1}.date-big{font-size:14px;font-weight:700}.date-small{font-size:10px;color:#c5d2c7;margin-top:4px}.stamp{border:1px solid #ffffff66;border-radius:50%;width:62px;height:62px;display:grid;place-items:center;text-align:center;font-size:9px;line-height:1.25;transform:rotate(9deg)}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.quick-card{background:var(--paper);border:1px solid var(--line);padding:15px 16px;border-radius:16px}.quick-label{font-size:9px;color:var(--muted);letter-spacing:.13em;font-weight:700}.quick-main{font-size:13px;font-weight:700;margin-top:7px}.quick-sub{font-size:11px;color:var(--muted);margin-top:3px}
+.navwrap{position:sticky;top:0;z-index:20;background:#f5f2ebed;backdrop-filter:blur(14px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.nav{max-width:760px;margin:auto;padding:0 20px;display:flex;overflow-x:auto;gap:22px;scrollbar-width:none}.nav::-webkit-scrollbar{display:none}.nav a{padding:14px 0 12px;white-space:nowrap;font-size:10px;letter-spacing:.1em;font-weight:800;color:var(--muted);border-bottom:2px solid transparent}.nav a:hover,.nav a:focus{color:var(--orange);border-color:var(--orange)}
+main{padding-bottom:60px}.section{padding:37px 0 0}.section-top{display:flex;justify-content:space-between;align-items:end;margin-bottom:17px}.section-kicker{font-size:9px;letter-spacing:.16em;color:var(--orange);font-weight:800}.section h2{font-size:23px;letter-spacing:-.055em;margin:5px 0 0}.section-note{font-size:10px;color:var(--muted);text-align:right}
+.day-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;overflow:hidden}.day-head{padding:18px 19px;background:#ebece3;display:flex;align-items:center;justify-content:space-between}.day-left{display:flex;align-items:center;gap:13px}.day-number{font-size:37px;line-height:1;color:var(--green);font-weight:800;letter-spacing:-.08em}.day-date{font-size:11px;font-weight:800}.day-theme{font-size:10px;color:var(--muted);margin-top:3px}.day-label{background:var(--green);color:white;border-radius:30px;padding:6px 10px;font-size:9px;font-weight:700}
+.timeline{padding:4px 19px 13px}.event{display:grid;grid-template-columns:54px 17px 1fr;gap:9px;position:relative;padding:15px 0}.event:not(:last-child):after{content:"";position:absolute;left:61px;top:29px;bottom:-13px;width:1px;background:var(--line)}.event-time{font-family:"DM Mono",monospace;font-size:10px;color:var(--orange);font-weight:500;padding-top:3px}.dot{width:9px;height:9px;border:2px solid var(--orange);border-radius:50%;background:var(--paper);margin:3px auto 0;z-index:1}.event-title{font-size:14px;font-weight:800;letter-spacing:-.035em}.event-desc{font-size:11px;line-height:1.65;color:var(--muted);margin-top:4px}.event-tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:7px}.tag{font-size:9px;padding:4px 7px;border-radius:5px;background:var(--pale);color:var(--green);font-weight:700}.tag.orange{background:#fae9e2;color:#a84c31}.links{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.link{font-size:10px;font-weight:700;border:1px solid var(--line);border-radius:30px;padding:6px 10px;background:white}.link.primary{background:var(--green);color:white;border-color:var(--green)}.aside{margin-top:10px;background:#fff7e2;border-left:3px solid var(--yellow);padding:12px 14px;border-radius:0 12px 12px 0;font-size:11px;color:#655b3f;line-height:1.6}
+.food-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.food{background:var(--paper);border:1px solid var(--line);border-radius:15px;padding:14px}.food-day{font-size:9px;color:var(--orange);letter-spacing:.12em;font-weight:800}.food h3{font-size:13px;margin:7px 0 4px;letter-spacing:-.03em}.food p{font-size:10px;color:var(--muted);margin:0;line-height:1.5}.food .link{display:inline-block;margin-top:10px}
+.place-list{background:var(--paper);border:1px solid var(--line);border-radius:17px;padding:3px 16px}.place{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.place:last-child{border:0}.place b{font-size:12px}.place small{display:block;font-size:10px;color:var(--muted);margin-top:3px}
+.hotel{background:var(--green);color:white;border-radius:18px;padding:18px;margin-top:10px}.hotel .section-kicker{color:var(--yellow)}.hotel h3{font-size:16px;margin:7px 0 3px}.hotel p{font-size:10px;color:#d4ded4;margin:0}.hotel .link{display:inline-block;margin-top:12px;background:#fff;color:var(--green);border:0}
+.check-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.check{display:flex;align-items:center;gap:9px;background:var(--paper);border:1px solid var(--line);border-radius:11px;padding:11px;font-size:11px}.check input{accent-color:var(--orange);width:15px;height:15px}
+.footer{margin-top:45px;padding:22px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;font-size:9px;color:var(--muted);letter-spacing:.08em}
+@media(min-width:700px){.hero{padding-top:38px}.hero-box{padding:38px 40px 32px}.quick{grid-template-columns:repeat(4,1fr)}.section{padding-top:48px}.timeline{padding:7px 27px 16px}.event{grid-template-columns:68px 20px 1fr;gap:12px}.event:not(:last-child):after{left:77px}.food-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:390px){.shell{padding:0 14px}.hero-box{padding:24px 19px}.quick-card{padding:12px}.event{grid-template-columns:47px 15px 1fr;gap:7px}.event:not(:last-child):after{left:53px}.timeline{padding-left:13px;padding-right:13px}.food-grid{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
-<header>
- <div class="wrap">
-  <div class="top"><span class="logo">FIELD NOTES / TRAVEL</span><span>FUKUOKA · JAPAN</span></div>
-  <div class="hero">
-   <div class="eyebrow">2 NIGHTS · 3 DAYS · TWO TRAVELERS</div>
-   <h1>FUKUOKA<br>TRIP.</h1>
-   <p>맛있는 것 먹고, 천천히 걷고, 마음에 드는 곳에서 쇼핑하기.</p>
-   <div class="hero-meta"><span class="pill">18 — 20 NOV 2026</span><span class="pill">TENJIN BASE</span><span class="pill">2 PEOPLE</span></div>
-  </div>
+<header class="shell hero">
+ <div class="topline"><div class="brand"><span class="brandmark">福</span><span>TRAVEL NOTES</span></div><span class="edition mono">ISSUE 001 · JAPAN</span></div>
+ <div class="hero-box">
+  <div class="eyebrow mono">2 NIGHTS / 3 DAYS · TWO TRAVELERS</div>
+  <h1>FUKUOKA<span>.</span><br>LET'S GO.</h1>
+  <p class="hero-sub">먹고, 걷고, 구경하는 우리들의 후쿠오카</p>
+  <div class="hero-bottom"><div><div class="date-big mono">NOV 18 — 20, 2026</div><div class="date-small">WEDNESDAY — FRIDAY · TENJIN BASE</div></div><div class="stamp mono">福岡<br>TRIP<br>2026</div></div>
+ </div>
+ <div class="quick">
+  <div class="quick-card"><div class="quick-label mono">OUTBOUND · 11.18</div><div class="quick-main">인천 06:30 → 후쿠오카 07:55</div><div class="quick-sub">제주항공 7C1401</div></div>
+  <div class="quick-card"><div class="quick-label mono">RETURN · 11.20</div><div class="quick-main">후쿠오카 17:00 → 인천 18:35</div><div class="quick-sub">에어서울 RS458</div></div>
  </div>
 </header>
-<nav><div class="navinner"><a href="#overview">TRIP INFO</a><a href="#day1">DAY 1</a><a href="#day2">DAY 2</a><a href="#day3">DAY 3</a><a href="#food">FOOD LIST</a><a href="#spots">PLACES</a><a href="#check">CHECKLIST</a></div></nav>
-<main class="wrap">
-<section id="overview">
- <div class="section-head"><div><div class="kicker">THE BASICS</div><h2>여행 기본 정보</h2></div><span class="small">2026.11.18 — 11.20</span></div>
- <div class="info-grid">
-  <div class="info"><b>OUTBOUND · 11/18</b><span>인천 06:30 → 후쿠오카 07:55<br>제주항공 7C1401</span></div>
-  <div class="info"><b>RETURN · 11/20</b><span>후쿠오카 17:00 → 인천 18:35<br>에어서울 RS458</span></div>
-  <div class="info"><b>STAY · 2 NIGHTS</b><span>니시테츠 인 후쿠오카<br>텐진 중심 숙소</span></div>
+<div class="navwrap"><nav class="nav"><a href="#day1">DAY 01</a><a href="#day2">DAY 02</a><a href="#day3">DAY 03</a><a href="#food">RESTAURANTS</a><a href="#info">INFO</a><a href="#check">CHECKLIST</a></nav></div>
+<main class="shell">
+<section class="section" id="day1">
+ <div class="section-top"><div><div class="section-kicker mono">WED · NOV 18</div><h2>하카타를 먼저, 저녁은 텐진</h2></div><div class="section-note">DAY 01<br>ARRIVAL</div></div>
+ <article class="day-card"><div class="day-head"><div class="day-left"><div class="day-number">01</div><div><div class="day-date">11월 18일 수요일</div><div class="day-theme">도착 · 하카타 · 모츠나베</div></div></div><span class="day-label">도착일</span></div>
+ <div class="timeline">
+  <div class="event"><div class="event-time">07:55</div><div class="dot"></div><div><div class="event-title">후쿠오카 공항 도착</div><div class="event-desc">입국 수속 후 텐진으로 이동해 숙소에 짐을 맡기고 출발.</div></div></div>
+  <div class="event"><div class="event-time">점심</div><div class="dot"></div><div><div class="event-title">因幡町 一慶 · 이나바초 잇케이</div><div class="event-desc">이번 점심의 목적은 멘타이동! 모츠나베가 아니라 명란·도미 덮밥을 먹으러 가는 일정.</div><div class="event-tags"><span class="tag orange">멘타이동</span><span class="tag">점심</span></div><div class="links"><a class="link primary" href="https://maps.app.goo.gl/Ln4M1BPDr4ayC9J1A" target="_blank" rel="noopener">저장한 지도 ↗</a><a class="link" href="https://tabelog.com/fukuoka/A4001/A400103/40060531/dtlmenu/lunch/" target="_blank" rel="noopener">점심 메뉴 ↗</a></div></div></div>
+  <div class="event"><div class="event-time">오후</div><div class="dot"></div><div><div class="event-title">하카타 잇소우 · 캐널시티</div><div class="event-desc">라멘은 배가 괜찮으면 추가로. 이후 캐널시티에서 쇼핑하고 구경하기.</div><div class="event-tags"><span class="tag">선택 일정</span></div><div class="links"><a class="link" href="https://maps.app.goo.gl/RMfW1mxV4d7BFZWTA?g_st=ac" target="_blank" rel="noopener">잇소우 지도 ↗</a><a class="link" href="https://www.google.com/maps/search/?api=1&query=Canal+City+Hakata" target="_blank" rel="noopener">캐널시티 지도 ↗</a></div></div></div>
+  <div class="event"><div class="event-time">저녁 전</div><div class="dot"></div><div><div class="event-title">텐진 복귀 · 체크인 · 휴식</div><div class="event-desc">하카타에서 텐진으로 돌아와 숙소 체크인하고 쉬어가기.</div></div></div>
+  <div class="event"><div class="event-time">저녁</div><div class="dot"></div><div><div class="event-title">모츠나베 一藤 · 이치후지</div><div class="event-desc">텐진 니시도리점에서 저녁. 공식 매장 정보를 확인하고 방문하기.</div><div class="event-tags"><span class="tag orange">모츠나베</span></div><div class="links"><a class="link primary" href="https://www.ichifuji-f.jp/nishidori/ko/shop/" target="_blank" rel="noopener">공식 매장 정보 ↗</a><a class="link" href="https://www.google.com/maps/search/?api=1&query=Motsunabe+Ichifuji+Tenjin+Nishidori" target="_blank" rel="noopener">지도 ↗</a></div></div></div>
+ </div></article>
+ <div class="aside">첫날은 비행 직후라 무리하지 않기. 하카타 잇소우는 점심 이후에도 배와 시간이 여유로울 때만 들르는 선택 코스야.</div>
+</section>
+<section class="section" id="day2">
+ <div class="section-top"><div><div class="section-kicker mono">THU · NOV 19</div><h2>공원 산책하고, 텐진 쇼핑</h2></div><div class="section-note">DAY 02<br>WALK & SHOP</div></div>
+ <article class="day-card"><div class="day-head"><div class="day-left"><div class="day-number">02</div><div><div class="day-date">11월 19일 목요일</div><div class="day-theme">오호리공원 · 우동 · 다이묘</div></div></div><span class="day-label">산책·쇼핑</span></div>
+ <div class="timeline">
+  <div class="event"><div class="event-time">오전</div><div class="dot"></div><div><div class="event-title">오호리공원</div><div class="event-desc">호수 주변 산책하며 여유롭게 하루 시작.</div><div class="links"><a class="link" href="https://www.google.com/maps/search/?api=1&query=Ohori+Park+Fukuoka" target="_blank" rel="noopener">지도 ↗</a></div></div></div>
+  <div class="event"><div class="event-time">점심</div><div class="dot"></div><div><div class="event-title">讃岐うどん 志成 · 시나리</div><div class="event-desc">오호리공원 근처에서 사누키 우동 점심.</div><div class="event-tags"><span class="tag orange">사누키 우동</span></div><div class="links"><a class="link primary" href="https://maps.app.goo.gl/CgdB7ffeNdSjedfo8?g_st=akt" target="_blank" rel="noopener">저장한 지도 ↗</a></div></div></div>
+  <div class="event"><div class="event-time">오후</div><div class="dot"></div><div><div class="event-title">텐진 · 다이묘 쇼핑</div><div class="event-desc">텐진 지하상가와 파르코, 다이묘 거리 중심으로 구경.</div><div class="links"><a class="link" href="https://www.google.com/maps/search/?api=1&query=Fukuoka+PARCO" target="_blank" rel="noopener">파르코 지도 ↗</a><a class="link" href="https://www.google.com/maps/search/?api=1&query=Daimyo+Fukuoka" target="_blank" rel="noopener">다이묘 지도 ↗</a></div></div></div>
+  <div class="event"><div class="event-time">저녁</div><div class="dot"></div><div><div class="event-title">焼鳥とイロリ くろ船 · 쿠로후네</div><div class="event-desc">야키토리와 이로리 요리. 이날 저녁에 방문하고 싶은 식당.</div><div class="event-tags"><span class="tag orange">야키토리</span></div><div class="links"><a class="link primary" href="https://maps.app.goo.gl/kYu3kos6e6HLBsLZ8" target="_blank" rel="noopener">저장한 지도 ↗</a></div></div></div>
+ </div></article>
+</section>
+<section class="section" id="day3">
+ <div class="section-top"><div><div class="section-kicker mono">FRI · NOV 20</div><h2>텐진에서 마무리하고 귀국</h2></div><div class="section-note">DAY 03<br>LAST DAY</div></div>
+ <article class="day-card"><div class="day-head"><div class="day-left"><div class="day-number">03</div><div><div class="day-date">11월 20일 금요일</div><div class="day-theme">체크아웃 · 쇼핑 · 귀국</div></div></div><span class="day-label">귀국일</span></div>
+ <div class="timeline">
+  <div class="event"><div class="event-time">오전</div><div class="dot"></div><div><div class="event-title">체크아웃 · 짐 보관</div><div class="event-desc">숙소에 짐을 맡기고 텐진 주변에서 마지막 쇼핑.</div></div></div>
+  <div class="event"><div class="event-time">점심</div><div class="dot"></div><div><div class="event-title">黒毛和牛まぶし 暁 · 아카츠키</div><div class="event-desc">텐진점에서 흑모 와규 마부시로 마지막 점심.</div><div class="event-tags"><span class="tag orange">와규 마부시</span></div><div class="links"><a class="link primary" href="https://www.google.com/maps/search/?api=1&query=黒毛和牛まぶし+暁+天神店" target="_blank" rel="noopener">지도 ↗</a></div></div></div>
+  <div class="event"><div class="event-time">오후</div><div class="dot"></div><div><div class="event-title">짐 찾고 공항으로 이동</div><div class="event-desc">출국 수속 시간을 고려해 여유 있게 공항으로 출발.</div></div></div>
+  <div class="event"><div class="event-time">17:00</div><div class="dot"></div><div><div class="event-title">후쿠오카 출발 · 인천행</div><div class="event-desc">에어서울 RS458 · 인천 18:35 도착 예정.</div></div></div>
+ </div></article>
+ <div class="aside">마지막 날은 하카타나 외곽으로 이동하지 않고 텐진 주변에서 보내는 일정으로 잡았어.</div>
+</section>
+<section class="section" id="food">
+ <div class="section-top"><div><div class="section-kicker mono">EAT YOUR WAY</div><h2>이번 여행의 식당</h2></div><div class="section-note">5곳 + 선택 1곳</div></div>
+ <div class="food-grid">
+  <div class="food"><div class="food-day mono">DAY 01 · LUNCH</div><h3>因幡町 一慶</h3><p>멘타이동 · 도미 덮밥</p><a class="link" href="https://maps.app.goo.gl/Ln4M1BPDr4ayC9J1A" target="_blank" rel="noopener">지도 열기 ↗</a></div>
+  <div class="food"><div class="food-day mono">DAY 01 · DINNER</div><h3>もつ鍋 一藤</h3><p>모츠나베 · 텐진 니시도리</p><a class="link" href="https://www.ichifuji-f.jp/nishidori/ko/shop/" target="_blank" rel="noopener">공식 정보 ↗</a></div>
+  <div class="food"><div class="food-day mono">DAY 02 · LUNCH</div><h3>讃岐うどん 志成</h3><p>사누키 우동</p><a class="link" href="https://maps.app.goo.gl/CgdB7ffeNdSjedfo8?g_st=akt" target="_blank" rel="noopener">지도 열기 ↗</a></div>
+  <div class="food"><div class="food-day mono">DAY 02 · DINNER</div><h3>焼鳥とイロリ くろ船</h3><p>야키토리 · 이로리</p><a class="link" href="https://maps.app.goo.gl/kYu3kos6e6HLBsLZ8" target="_blank" rel="noopener">지도 열기 ↗</a></div>
+  <div class="food"><div class="food-day mono">DAY 03 · LUNCH</div><h3>黒毛和牛まぶし 暁</h3><p>와규 마부시 · 텐진점</p><a class="link" href="https://www.google.com/maps/search/?api=1&query=黒毛和牛まぶし+暁+天神店" target="_blank" rel="noopener">지도 열기 ↗</a></div>
+  <div class="food"><div class="food-day mono">OPTIONAL</div><h3>博多一双</h3><p>하카타 돈코츠 라멘 · 첫날 여유 있을 때</p><a class="link" href="https://maps.app.goo.gl/RMfW1mxV4d7BFZWTA?g_st=ac" target="_blank" rel="noopener">지도 열기 ↗</a></div>
  </div>
- <div class="card" style="margin-top:14px">
-  <div class="kicker">HOTEL</div><h3>니시테츠 인 후쿠오카</h3>
-  <p class="small">1-16-1 Tenjin, Chuo-ku, Fukuoka</p>
-  <div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/R9TFhKotyeCe1mdf9?g_st=ic">숙소 지도 열기 ↗</a></div>
+ <p class="section-note" style="text-align:left;margin-top:10px">※ 영업시간·메뉴는 변경될 수 있어. 예약은 아직 진행되지 않았으니 출발 전 확인하기.</p>
+</section>
+<section class="section" id="info">
+ <div class="section-top"><div><div class="section-kicker mono">STAY & EXTRA</div><h2>숙소와 추가 후보</h2></div></div>
+ <div class="hotel"><div class="section-kicker mono">OUR BASE · TENJIN</div><h3>니시테츠 인 후쿠오카</h3><p>2박 · 텐진 중심 숙소</p><a class="link" href="https://maps.app.goo.gl/R9TFhKotyeCe1mdf9?g_st=ic" target="_blank" rel="noopener">숙소 지도 열기 ↗</a></div>
+ <div class="place-list" style="margin-top:10px">
+  <div class="place"><div><b>이토오카시</b><small>아침 식사 후보</small></div><a class="link" href="https://maps.app.goo.gl/4YJQWWntCBsxnngUA?g_st=ac" target="_blank" rel="noopener">지도 ↗</a></div>
+  <div class="place"><div><b>모모치해변 · 마리존</b><small>시간이 맞으면 방문하고 싶은 곳</small></div><a class="link" href="https://www.google.com/maps/search/?api=1&query=Momochi+Seaside+Park+Fukuoka" target="_blank" rel="noopener">지도 ↗</a></div>
+  <div class="place"><div><b>라라포트 후쿠오카</b><small>쇼핑 후보 · 이동 시간 고려</small></div><a class="link" href="https://www.google.com/maps/search/?api=1&query=LaLaport+Fukuoka" target="_blank" rel="noopener">지도 ↗</a></div>
  </div>
 </section>
-
-<section id="day1">
- <div class="section-head"><div><div class="kicker">WEDNESDAY · 18 NOV</div><h2>DAY 1 — HAKATA & TENJIN</h2></div><span class="small">하카타 먼저, 저녁은 텐진</span></div>
- <div class="day"><div class="dayhead"><div><div class="daynum">01</div><div class="daydate">11월 18일 수요일</div></div><span class="tag">도착일</span></div>
-  <div class="daybody">
-   <div class="stop"><div class="time">07:55</div><div><h3>후쿠오카 공항 도착</h3><p>입국 수속 후 시내 이동. 숙소에 짐을 맡길 수 있는지 확인하고 출발.</p></div></div>
-   <div class="stop"><div class="time">11:00–</div><div><h3>점심 · 因幡町 一慶 <span class="tag">멘타이동</span></h3><p>명란과 도미 회를 올린 멘타이동을 먹는 일정. 평일 점심 영업 시간과 라스트 오더를 확인하고 방문.</p><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/Ln4M1BPDr4ayC9J1A">사용자 저장 지도 ↗</a><a class="btn ghost" target="_blank" rel="noopener" href="https://tabelog.com/fukuoka/A4001/A400103/40060531/dtlmenu/lunch/">점심 메뉴 확인 ↗</a></div></div></div>
-   <div class="stop"><div class="time">오후</div><div><h3>하카타 이동 · 하카타 잇소우</h3><p>돈코츠 라멘 후보. 점심을 먹은 뒤라 배가 괜찮으면 들르는 선택 일정.</p><div class="actions"><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/RMfW1mxV4d7BFZWTA?g_st=ac">지도 열기 ↗</a></div></div></div>
-   <div class="stop"><div class="time">오후</div><div><h3>캐널시티 하카타</h3><p>쇼핑 및 시설 구경. 체력과 시간에 따라 둘러보는 범위 조절.</p><div class="actions"><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Canal+City+Hakata">지도 열기 ↗</a></div></div></div>
-   <div class="stop"><div class="time">저녁</div><div><h3>텐진 숙소 체크인 · 휴식</h3><p>하카타에서 텐진으로 돌아와 체크인하고 잠시 쉬기.</p></div></div>
-   <div class="stop"><div class="time">17:00–</div><div><h3>저녁 · 모츠나베 이치후지 <span class="tag">선택 완료</span></h3><p>미소 모츠나베. 텐진 니시도리점 기준으로 반영.</p><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.ichifuji-f.jp/nishidori/ko/shop/">공식 매장 정보 ↗</a><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Motsunabe+Ichifuji+Tenjin+Nishidori">지도 열기 ↗</a></div></div></div>
-  </div>
- </div>
- <div class="note">첫날은 비행 후 이동이 많은 날이야. 하카타 잇소우는 점심을 먹고도 여유가 있을 때 들르는 선택 일정으로 두었어.</div>
-</section>
-
-<section id="day2">
- <div class="section-head"><div><div class="kicker">THURSDAY · 19 NOV</div><h2>DAY 2 — OHORI & DAIMYO</h2></div><span class="small">공원 산책 + 덴진 저녁</span></div>
- <div class="day"><div class="dayhead"><div><div class="daynum">02</div><div class="daydate">11월 19일 목요일</div></div><span class="tag">산책·맛집</span></div>
-  <div class="daybody">
-   <div class="stop"><div class="time">오전</div><div><h3>오호리공원 산책</h3><p>호수 주변을 천천히 걷고 여유롭게 시작하기.</p><div class="actions"><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ohori+Park+Fukuoka">지도 열기 ↗</a></div></div></div>
-   <div class="stop"><div class="time">점심</div><div><h3>讃岐うどん 志成 · 시나리 <span class="tag">선택 완료</span></h3><p>오호리공원·오테몬 쪽에 있는 사누키 우동 전문점.</p><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/CgdB7ffeNdSjedfo8?g_st=akt">사용자 저장 지도 ↗</a></div></div></div>
-   <div class="stop"><div class="time">오후</div><div><h3>텐진 · 다이묘 쇼핑</h3><p>텐진 지하상가, 파르코, 다이묘 거리 등 관심 있는 매장 중심으로 구경.</p><div class="actions"><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Fukuoka+PARCO">파르코 지도 ↗</a><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Daimyo+Fukuoka">다이묘 지도 ↗</a></div></div></div>
-   <div class="stop"><div class="time">저녁</div><div><h3>야키토리와 이로리 쿠로후네 <span class="tag">방문 희망</span></h3><p>다이묘의 야키토리·이로리 요리 이자카야. 저녁 식사 후보로 배치.</p><div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/kYu3kos6e6HLBsLZ8">사용자 저장 지도 ↗</a></div></div></div>
-  </div>
+<section class="section" id="check">
+ <div class="section-top"><div><div class="section-kicker mono">DON'T FORGET</div><h2>출발 전 체크</h2></div></div>
+ <div class="check-grid">
+  <label class="check"><input type="checkbox"> 여권 유효기간</label><label class="check"><input type="checkbox"> 항공권·탑승 정보</label>
+  <label class="check"><input type="checkbox"> 숙소 예약 확인</label><label class="check"><input type="checkbox"> Visit Japan Web</label>
+  <label class="check"><input type="checkbox"> 해외 결제 카드·현금</label><label class="check"><input type="checkbox"> eSIM·로밍</label>
+  <label class="check"><input type="checkbox"> 충전기·보조배터리</label><label class="check"><input type="checkbox"> 식당 영업시간 재확인</label>
  </div>
 </section>
-
-<section id="day3">
- <div class="section-head"><div><div class="kicker">FRIDAY · 20 NOV</div><h2>DAY 3 — TENJIN & HOME</h2></div><span class="small">멀리 이동하지 않는 마지막 날</span></div>
- <div class="day"><div class="dayhead"><div><div class="daynum">03</div><div class="daydate">11월 20일 금요일</div></div><span class="tag">귀국일</span></div>
-  <div class="daybody">
-   <div class="stop"><div class="time">오전</div><div><h3>체크아웃 · 짐 보관</h3><p>숙소 체크아웃 후 짐을 맡기고 텐진 주변에서 쇼핑.</p></div></div>
-   <div class="stop"><div class="time">점심</div><div><h3>흑모 와규 마부시 아카츠키 텐진점 <span class="tag">선택 완료</span></h3><p>고기덮밥 후보 중 선택한 와규 마부시.</p><div class="actions"><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=黒毛和牛まぶし+暁+天神店">지도 열기 ↗</a></div></div></div>
-   <div class="stop"><div class="time">오후</div><div><h3>숙소에서 짐 찾기 · 공항 이동</h3><p>공항 이동과 출국 수속을 위해 여유 있게 출발.</p></div></div>
-   <div class="stop"><div class="time">17:00</div><div><h3>후쿠오카 출발 · 인천행</h3><p>에어서울 RS458 · 18:35 인천 도착 예정.</p></div></div>
-  </div>
- </div>
-</section>
-
-<section id="food">
- <div class="section-head"><div><div class="kicker">FOOD MAP</div><h2>식당 한눈에 보기</h2></div><span class="small">방문 일정 기준</span></div>
- <div class="grid">
-  <div class="card restaurant"><div class="kind">DAY 1 · LUNCH</div><h3>因幡町 一慶</h3><p>멘타이동 · 명란과 도미 회 덮밥</p><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/Ln4M1BPDr4ayC9J1A">지도 ↗</a></div>
-  <div class="card restaurant"><div class="kind">DAY 1 · DINNER</div><h3>もつ鍋 一藤</h3><p>미소 모츠나베 · 텐진 니시도리점</p><a class="btn ghost" target="_blank" rel="noopener" href="https://www.ichifuji-f.jp/nishidori/ko/shop/">공식 정보 ↗</a></div>
-  <div class="card restaurant"><div class="kind">DAY 2 · LUNCH</div><h3>讃岐うどん 志成</h3><p>사누키 우동 · 오테몬</p><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/CgdB7ffeNdSjedfo8?g_st=akt">지도 ↗</a></div>
-  <div class="card restaurant"><div class="kind">DAY 2 · DINNER</div><h3>焼鳥とイロリ くろ船</h3><p>야키토리 · 이로리 요리 · 다이묘</p><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/kYu3kos6e6HLBsLZ8">지도 ↗</a></div>
-  <div class="card restaurant"><div class="kind">DAY 3 · LUNCH</div><h3>黒毛和牛まぶし 暁 天神店</h3><p>흑모 와규 마부시</p><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=黒毛和牛まぶし+暁+天神店">지도 ↗</a></div>
-  <div class="card restaurant"><div class="kind">OPTIONAL · HAKATA</div><h3>博多一双</h3><p>하카타 돈코츠 라멘 · 첫날 여유가 있으면</p><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/RMfW1mxV4d7BFZWTA?g_st=ac">지도 ↗</a></div>
- </div>
- <p class="small" style="margin-top:12px">※ 영업시간·가격은 변동될 수 있어. 출발 전 최신 정보를 다시 확인하고, 예약은 별도로 진행해야 해.</p>
-</section>
-
-<section id="spots">
- <div class="section-head"><div><div class="kicker">EXTRA STOPS</div><h2>시간이 남으면 들를 곳</h2></div></div>
- <div class="card list">
-  <div class="listrow"><div><b>이토오카시</b><div class="small">아침 식사 후보 · 보류</div></div><a class="btn ghost" target="_blank" rel="noopener" href="https://maps.app.goo.gl/4YJQWWntCBsxnngUA?g_st=ac">지도 ↗</a></div>
-  <div class="listrow"><div><b>라라포트 후쿠오카</b><div class="small">쇼핑 · 이동 시간 확인 후 선택</div></div><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=LaLaport+Fukuoka">지도 ↗</a></div>
-  <div class="listrow"><div><b>모모치해변 · 마리존 · 후쿠오카 타워</b><div class="small">관광 후보 · 필수 일정 아님</div></div><a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Momochi+Seaside+Park+Fukuoka">지도 ↗</a></div>
- </div>
- <div class="note" style="margin-top:14px">모모치해변과 라라포트는 이동 시간이 추가되므로, 이번 일정에서는 우선순위를 낮춰 두었어.</div>
-</section>
-
-<section id="check">
- <div class="section-head"><div><div class="kicker">BEFORE YOU GO</div><h2>여행 체크리스트</h2></div><span class="small">체크한 항목은 기기 안에 저장되지 않음</span></div>
- <div class="checks">
-  <label class="check"><input type="checkbox"> 여권 유효기간 확인</label>
-  <label class="check"><input type="checkbox"> 항공권·탑승 정보 확인</label>
-  <label class="check"><input type="checkbox"> 숙소 예약 확인</label>
-  <label class="check"><input type="checkbox"> Visit Japan Web 작성</label>
-  <label class="check"><input type="checkbox"> 해외 결제 카드·현금</label>
-  <label class="check"><input type="checkbox"> 데이터·로밍·eSIM</label>
-  <label class="check"><input type="checkbox"> 보조배터리·충전기</label>
-  <label class="check"><input type="checkbox"> 식당 영업시간 재확인</label>
- </div>
-</section>
+<footer class="footer"><span class="mono">FUKUOKA / NOV 2026</span><span>좋아하는 곳을 함께 걷는 여행.</span></footer>
 </main>
-<footer><div class="wrap footline"><span>FUKUOKA TRIP · NOV 2026</span><span>즐겁고 무리 없는 여행을 위해.</span></div></footer>
 </body></html>
