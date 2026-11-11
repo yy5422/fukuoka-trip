@@ -86,6 +86,20 @@ body{background:#fff;color:#000}
 
 /* Explicit map-button override */
 a.link.map-button, a.hotel-map{background:#fff!important;background-color:#fff!important;color:#000!important;border:1px solid #ccc!important;}
+
+/* Mobile timeline overflow fix */
+.timeline{width:100%;box-sizing:border-box}
+.event{width:100%;min-width:0;box-sizing:border-box;grid-template-columns:54px 17px minmax(0,1fr)}
+.event > div:last-child{min-width:0;max-width:100%;overflow-wrap:anywhere;word-break:keep-all}
+.event-title,.event-desc,.event .links{min-width:0;max-width:100%}
+@media(max-width:600px){
+ .timeline{padding-left:14px;padding-right:14px}
+ .event{--time-col:48px;--event-gap:8px;grid-template-columns:var(--time-col) 16px minmax(0,1fr);gap:var(--event-gap)}
+ .event:not(:last-child):after{left:calc(var(--time-col) + var(--event-gap) + 7px)}
+ .event-title{font-size:14px;line-height:1.45;word-break:keep-all}
+ .event-desc{font-size:11px;line-height:1.7;word-break:keep-all;overflow-wrap:break-word}
+ .link{white-space:nowrap}
+}
 </style>
 </head>
 <body>
